@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculate">
+        <h1>Avareage Marks Calculation</h1>
+        <form action="/" method="post" class="form">
+            <div class="number">
+                <label for="math">Maths</label>
+                <input type="text" name="math" id="math" placeholder="Enter your marks">
+            </div>
+            <div class="number">
+                <label for="physics">Physics</label>
+                <input type="text" name="physics" id="physics" placeholder="Enter your marks">
+            </div>
+            <div class="number">
+                <label for="chemistry">Chemistry</label>
+                <input type="text" name="chemistry" id="chemistry" placeholder="Enter your marks">
+            </div>
+            <div class="number">
+                <button class="btn">Calculate</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
